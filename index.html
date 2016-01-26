@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sol y Carlos</title>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom.css" type="text/css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- Hamburger menu -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">SOL &amp; CARLOS</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav menu">
+              <li><a href="#home" class="inner-link" target="default">home</a></li>
+              <li><a href="#wedding" class="inner-link" target="default">the wedding</a></li>
+              <li><a href="#rsvp" class="inner-link" target="default">rsvp</a></li>
+              <li><a href="#accomodation" class="inner-link" target="default">accomodation</a></li>
+              <li><a href="#registry" class="inner-link" target="default">registry</a></li>
+              <li><a href="/spanish" class="inner-link" target="_self"><img src="./assets/flag_mexico.jpg"></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div id="jumbotron">
+        <img id="hero" alt="Sol and Carlos" src="./assets/sol_carlos.gif">
+        <span id="text_overlay" align="center">
+          <h1>Sol &amp; Carlos</h1>
+          <br>
+          <h3> November 26, 2016 - San Miguel Allende, Mexico</h3>
+        </span>
+        <br><br>
+      </div>
+      <div class="container-fluid">
+        <!-- Wedding -->
+        <section id="wedding">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3>Wedding</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4>Ceremony - 13h00</h4>
+                      <address>
+                        <strong>(1) Templo de San Francisco.</strong><br>
+                        1355 Market Street, Suite 900<br>
+                        San Francisco, CA 94103<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                      </address>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h4>Reception - 15h00</h4>
+                      <address>
+                        <strong>(1) Templo de San Francisco.</strong><br>
+                        1355 Market Street, Suite 900<br>
+                        San Francisco, CA 94103<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                      </address>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                      <div class="map col-lg-8">
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?size=400x300&maptype=roadmap
+                        &markers=color:blue%7Clabel:1%7C20.914588,-100.742362&markers=color:green%7Clabel:2%7C20.908522,-100.741466&key=AIzaSyD1tAv531WvBbpO7OWW1fiffsgIpfX2Mzk
+" alt=""/>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.929663548285!2d-100.74433648519238!3d20.915149286060025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b51ba2000727d%3A0x57ee21f948bff10a!2sTemplo+de+San+Francisco!5e0!3m2!1sen!2sus!4v1451718717661" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+          </section>
+          <section  id="rsvp">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>RSVP</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <form id="rsvp_form">
+                  <div class="form-group">
+                    <label for="entry.649060460">Name(s)</label>
+                    <input type="text" name="entry.649060460" class="form-control" id="entry.649060460" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="entry.824669627">Are you attending?&nbsp;&nbsp;&nbsp;</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="attending" id="radio1" value="Sí"> Yes
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="attending" id="radio2" value="No"> No
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="entry.370214622">Email</label>
+                    <input type="email" name="entry.370214622" class="form-control" id="entry.370214622" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="entry.824669627">Menu&nbsp;&nbsp;&nbsp;</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="entry.824669627" id="radio1" value="No">Regular
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="entry.824669627" id="radio2" value="Sí"> Vegetarian
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+
+
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <!--Registry-->
+          <section  id="registry">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>Registry</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3 align="center">
+                      Your presence will be the best gift!
+                    </h3>
+                    <h5 align="center">
+                      <span>but if you want to give us an additional present...(you don't have to)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Accomodation-->
+          <section  id="accomodation">
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Accomodation</h3>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-3">Opcion 1</div>
+              <div class="col-lg-3">Opcion 2</div>
+              <div class="col-lg-3">Opcion 3</div>
+              <div class="col-lg-3">Opcion 4</div>
+            </div>
+        </section>
+        <footer class="footer footer-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h6>© Copyright 2016 Carlos Berlanga - All Rights Reserved</h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+
+
+
+</html>
