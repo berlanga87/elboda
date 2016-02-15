@@ -10,10 +10,19 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/custom.css" type="text/css">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.11/jquery.scrollify.min.js">
+
+    </script>
+    <script type="text/javascript">
+
+    </script>
+
   </head>
   <body>
-      <nav class="navbar navbar-default">
+    <section id="hero_section" href="#1">
+      <nav id="navbar" class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
             <!-- Hamburger menu -->
@@ -32,22 +41,24 @@
               <li><a href="#rsvp" class="inner-link" target="default">rsvp</a></li>
               <li><a href="#accomodation" class="inner-link" target="default">accomodation</a></li>
               <li><a href="#registry" class="inner-link" target="default">registry</a></li>
-              <li><a href="/spanish" class="inner-link" target="_self"><img src="./assets/flag_mexico.jpg"></a></li>
+              <li id="flag"><a href="/spanish" class="inner-link" target="_self"><img src="./assets/flag_mexico.jpg" id="flag_img"></a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <section id="hero_section">
         <div class="row">
-          <div class="col-lg-12">
+          <div  id="hero_col" class="col-lg-12">
               <!-- <img id="hero" alt="Sol and Carlos" src="./assets/sol_carlos.gif"> -->
-              <span id="text_overlay" align="center">
-                <h1>Sol &amp; Carlos</h1>
-                <h3>
+              <p id="text_overlay" align="center">
+                <span id="title">Sol &amp; Carlos</span>
+                <br>
+                <span id="date">
                   November 26, 2016<br>
-                  San Miguel Allende, Mexico
-                </h3>
-              </span>
+                  San Miguel Allende, Mexico<br>
+                </span>
+                <br>
+                <button id="btn_rsvp" type="button" name="button" class="btn btn-lg">RSVP</button>
+              </p>
           </div>
         </div>
       </section>
@@ -64,61 +75,67 @@
       </div> -->
       <div class="container-fluid">
         <!-- Wedding -->
-        <section id="wedding">
+        <section id="wedding" href="#2">
           <div class="row" id="wedding_row">
             <div class="col-lg-12">
               <div class="row">
                 <div class="col-lg-12">
-                  <h2>Wedding</h2>
+                  <h1>Wedding</h1>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+              <br>
+              <br>
+              <div class="row" id="places_row">
                   <div class="row">
                     <div class="col-lg-12">
-                      <h4>Ceremony - 1pm</h4>
+                      <h2>Ceremony - 1pm</h2>
                       <address>
-                        <strong>(1) Templo de San Francisco.</strong><br>
-                        1355 Market Street, Suite 900<br>
-                        San Francisco, CA 94103<br>
+                        <strong>Templo de San Francisco</strong><a href="https://www.google.com/maps/place/Templo+de+San+Francisco/@20.9151493,-100.7421478,15z/data=!4m2!3m1!1s0x0:0x57ee21f948bff10a?sa=X&ved=0ahUKEwj76vXr59XKAhUM7GMKHaOiBVkQ_BIIfTAO"><small> (map)</small></a><br>
+                        San Francsico esq. Juárez<br>
+                        San Miguel de Allende, Guanajuato<br>
                       </address>
                     </div>
                   </div>
+                  <br>
                   <div class="row">
                     <div class="col-lg-12">
-                      <h4>Reception - 15h00</h4>
+                      <h2>Reception - 3pm</h2>
                       <address>
-                        <strong>Casa Parque - Sierra Nevada</strong><br>
-                        1355 Market Street, Suite 900<br>
-                        San Francisco, CA 94103<br>
+                        <strong>Casa Parque - Sierra Nevada</strong><a href="https://www.google.com/maps/place/Belmond+Casa+de+Sierra+Nevada+-+Casa+Parque/@20.9151493,-100.7421478,15z/data=!4m6!1m3!3m2!1s0x0000000000000000:0x3bc5d9938c70db02!2sBelmond+Casa+de+Sierra+Nevada+-+Casa+Parque!3m1!1s0x0000000000000000:0x3bc5d9938c70db02"><small> (map)</small></a><br>
+                        Santa Elena 2 (esq. Recreo)<br>
+                        San Miguel de Allende, Guanajuato<br>
                       </address>
                       <br>
                     </div>
                   </div>
-                </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <!-- Callejoneada -->
+                    </div>
 
-                <div id="map_div" class="col-lg-6">
-                  <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?size=400x300&maptype=roadmap
-                  &markers=color:blue%7Clabel:1%7C20.914588,-100.742362&markers=color:green%7Clabel:2%7C20.908522,-100.741466&key=AIzaSyD1tAv531WvBbpO7OWW1fiffsgIpfX2Mzk" class="img-responsive" alt="Responsive image">
                   </div>
-                </div>
+
               </div>
             </div>
             <br>
           </section>
-          <section  id="rsvp">
+        <section  id="rsvp" href="#2">
             <div class="row">
               <div class="col-lg-12">
-                <h2>RSVP</h2>
+                <h1>RSVP</h1>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col-md-4 col-md-offset-4  ">
                 <form id="rsvp_form">
                   <div class="form-group">
                     <label for="entry.649060460">Name(s)</label>
                     <input type="text" name="entry.649060460" class="form-control" id="entry.649060460" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="entry.370214622">Email</label>
+                    <input type="email" name="entry.370214622" class="form-control" id="entry.370214622" placeholder="Email">
                   </div>
                   <div class="form-group">
                     <label for="entry.824669627">Are you attending?&nbsp;&nbsp;&nbsp;</label>
@@ -130,10 +147,6 @@
                     </label>
                   </div>
                   <div class="form-group">
-                    <label for="entry.370214622">Email</label>
-                    <input type="email" name="entry.370214622" class="form-control" id="entry.370214622" placeholder="Email">
-                  </div>
-                  <div class="form-group">
                     <label for="entry.824669627">Menu&nbsp;&nbsp;&nbsp;</label>
                     <label class="radio-inline">
                       <input type="radio" name="entry.824669627" id="radio1" value="No">Regular
@@ -142,21 +155,19 @@
                       <input type="radio" name="entry.824669627" id="radio2" value="Sí"> Vegetarian
                     </label>
                   </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-
-
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
             </div>
           </section>
           <br>
           <!--Registry-->
-          <section  id="registry">
-            <div class="row">
+          <section  id="registry" href="#">
+            <div class="row" id="registry_row">
               <div class="col-lg-12">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2>Registry</h2>
+                    <h1>Registry</h1>
                   </div>
                 </div>
                 <div class="row">
@@ -175,29 +186,44 @@
           <section  id="accomodation">
             <div class="row">
               <div class="col-lg-12">
-                <h2>Accomodation</h2>
+                <h1>Accomodation</h1>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-lg-3">Opcion 1</div>
-              <div class="col-lg-3">Opcion 2</div>
-              <div class="col-lg-3">Opcion 3</div>
-              <div class="col-lg-3">Opcion 4</div>
+              <div class="col-lg-3"><h5>Opcion 1</h5></div>
+              <div class="col-lg-3"><h5>Opcion 2</h5></div>
+              <div class="col-lg-3"><h5>Opcion 3</h5></div>
+              <div class="col-lg-3"><h5>Opcion 4</h5></div>
             </div>
-        </section>
-        <footer class="footer footer-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h6>© Copyright 2016 Carlos Berlanga - All Rights Reserved</h6>
-						</div>
-					</div>
-				</div>
-			</footer>
-    </div>
+                  </section>
+        <section id="about">
+          <div class="row" id="sanmi_row">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>About San Miguel de Allende</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <footer class="footer footer-1" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h6>© Copyright 2016 Carlos Berlanga - All Rights Reserved</h6>
+              </div>
+            </div>
+          </div>
+          </footer>
+
+        </section>
+
+    </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 

@@ -1,28 +1,83 @@
 * {
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+h1 {
+  font-size: 38.5px;
+}
+h2 {
+  font-size: 31.5px;
+}
+h3 {
+  font-size: 24.5px;
+}
+h4 {
+  font-size: 17.5px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11.9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+address {
+  text-align: center;
+}
+img,
+embed,
+video,
+object {
+  max-width: 100%;
+}
+#flag {
+  max-height: 20px;
+  max-width: 30px;
 }
 .menu {
   float: right;
 }
-#text_overlay h1 {
+#title {
   font-size: 8vw;
 }
-#text_overlay h3 {
+#date {
   font-weight: 300;
-  font-size: 5vw;
+  font-size: 3vw;
+}
+#date br {
+  line-height: 5%;
 }
 #text_overlay {
-  position: absolute;
+  position: relative;
   width: 100%;
   margin: 0;
   text-align: center;
   display: block;
   color: #ffffff;
-  top: 50%;
+  top: 30%;
 }
 #wedding_row {
   background-color: #fafafa;
   margin-bottom: 10px;
+  height: 100vh;
+}
+#registry_row {
+  background-color: #fafafa;
+  height: 100vh;
+}
+#sanmi_row {
+  background-color: #fafafa;
+  height: 95vh;
+}
+#footer {
+  background-color: #fafafa;
 }
 #rsvp_form {
   border: 2px black;
@@ -48,4 +103,21 @@ section {
   background-position: center center;
   z-index: -100;
   min-height: 100vh;
+}
+#hero_col {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+#places_row {
+  margin: 0 auto;
+}
+#btn_rsvp {
+  opacity: 0.8;
+  color: #ffffff;
+  background: #66155a;
+  width: 100px;
+}
+input[type="radio"] {
+  margin-top: 10px;
 }

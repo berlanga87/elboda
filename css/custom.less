@@ -1,8 +1,39 @@
+
+@baseFontSize:          14px;
+
+// file: type.less
 * {
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+h1 { font-size: @baseFontSize * 2.75; } // ~38px
+h2 { font-size: @baseFontSize * 2.25; } // ~32px
+h3 { font-size: @baseFontSize * 1.75; } // ~24px
+h4 { font-size: @baseFontSize * 1.25; } // ~18px
+h5 { font-size: @baseFontSize; }
+h6 { font-size: @baseFontSize * 0.85; } // ~12px
+
+h1,h2,h3,h4,h5,p,span,
+address {
+  text-align: center;
 }
 
 @grey-base: rgb(250, 250, 250);
+
+ img, embed, video, object {
+   max-width: 100%
+ }
+
+ .row {
+
+ }
+
+ #flag {
+   max-height: 20px;
+   max-width: 30px;
+ }
 
 // .container-fluid {
 //   margin-left: 3%;
@@ -34,29 +65,48 @@
 //   z-index: -1;
 // }
 
-#text_overlay h1 {
+#title {
   font-size: 8vw;
 }
 
-#text_overlay h3 {
+#date {
   font-weight: 300;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
+#date br {
+      line-height: 5%;
+   }
+
 #text_overlay {
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
   margin: 0;
   text-align: center;
   display: block;
   color: #ffffff;
-  top: 50%;
+  top: 30%;
 }
 
 #wedding_row {
   background-color: color(@grey-base);
   margin-bottom: 10px;
+  height: 100vh;
+}
+
+#registry_row {
+  background-color: color(@grey-base);
+  height: 100vh;
+}
+
+#sanmi_row {
+  background-color: color(@grey-base);
+  height: 95vh;
+}
+
+#footer {
+  background-color: color(@grey-base);
 }
 
 #rsvp_form {
@@ -80,6 +130,7 @@
 
 section {
   min-height: 100vh;
+
 }
 
 #hero_section {
@@ -88,4 +139,26 @@ section {
   background-position:center center;
   z-index: -100;
   min-height: 100vh;
+}
+
+#hero_col {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+#places_row {
+  margin: 0 auto;
+}
+
+#btn_rsvp {
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  background: rgb(102, 21, 90);
+  width: 100px;
+}
+
+input[type="radio"] {
+ margin-top: 10px;
 }
